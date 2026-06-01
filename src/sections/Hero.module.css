@@ -1,0 +1,152 @@
+.hero {
+  padding-top: calc(var(--nav-h) + 4rem);
+  padding-bottom: 5rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* ── AVATAR ── */
+.avatarWrap {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.avatar {
+  width: 110px; height: 110px;
+  border-radius: 50%;
+  background: var(--bg3);
+  border: 2px solid var(--border2);
+  overflow: hidden;
+  transition: border-color .2s, transform .2s;
+  padding: 0;
+  object-fit: cover;
+}
+
+.avatar:hover { border-color: var(--accent); transform: scale(1.03); }
+
+.avatarPh {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: var(--text3);
+  font-size: 10px;
+  font-family: var(--mono);
+  letter-spacing: .05em;
+}
+
+.avatarPh svg {
+  width: 30px; height: 30px;
+  stroke: var(--text3); fill: none; stroke-width: 1.5;
+}
+
+.hint { font-size: 10px; color: var(--text3); font-family: var(--mono); }
+.fileInput { display: none; }
+
+/* ── TEXT ── */
+.text { flex: 1; }
+
+.greeting {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--accent);
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  margin-bottom: .75rem;
+}
+
+.name {
+  font-family: var(--mono);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -.03em;
+  margin-bottom: .5rem;
+}
+
+.name span { color: var(--accent); }
+
+.role {
+  font-size: 14px;
+  color: var(--text2);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  max-width: 480px;
+}
+
+/* ── CONTACTS ── */
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem .9rem;
+  margin-bottom: 2rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--text3);
+  text-decoration: none;
+  transition: color .15s;
+}
+
+.contactItem:hover { color: var(--accent2); }
+
+.contactItem svg {
+  width: 13px; height: 13px;
+  stroke: currentColor; fill: none; stroke-width: 2;
+  flex-shrink: 0;
+}
+
+/* ── BUTTONS ── */
+.ctas { display: flex; flex-wrap: wrap; gap: .6rem; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 12px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all .15s;
+  letter-spacing: .04em;
+  border: 1px solid transparent;
+}
+
+.btn svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2; }
+
+.btnPrimary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.btnPrimary:hover { background: #6a5ef0; border-color: #6a5ef0; }
+
+.btnOutline { background: transparent; color: var(--text2); border-color: var(--border); }
+.btnOutline:hover { border-color: var(--border2); color: var(--text); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .inner    { flex-direction: column; text-align: center; }
+  .contacts { justify-content: center; }
+  .ctas     { justify-content: center; }
+  .role     { margin-left: auto; margin-right: auto; }
+}

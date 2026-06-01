@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:      #0d0d0f;
+  --bg2:     #131316;
+  --bg3:     #1a1a1f;
+  --bg4:     #222228;
+  --accent:  #7c6fff;
+  --accent2: #b8b0ff;
+  --text:    #f0eff8;
+  --text2:   #a09fbc;
+  --text3:   #6b6a82;
+  --border:  rgba(255,255,255,0.07);
+  --border2: rgba(124,111,255,0.3);
+  --nav-h:   64px;
+  --mono:    'Space Mono', monospace;
+  --sans:    'DM Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-h);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(124,111,255,0.35);
+  color: var(--text);
+}
+
+a { color: inherit; }
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
