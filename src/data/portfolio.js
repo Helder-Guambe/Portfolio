@@ -88,6 +88,12 @@ export const EDUCATION = [
     school: 'Universidade Wutivi',
     status: 'Em curso',
   },
+  {
+    degree: 'C Programming For Beginners - Master the C Language',
+    school: 'Udemy',
+    status: 'Concluído',
+    certificateUrl: 'https://www.udemy.com/certificate/UC-3b5a27b6-aed1-49b1-8b06-d2f8f5ac8424/',
+  },
 ]
 
 export const LANGUAGES = [

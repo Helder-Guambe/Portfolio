@@ -29,18 +29,24 @@ export default function Formacao() {
             </div>
           ))}
 
-          {EDUCATION.map(edu => (
-            <div key={edu.degree} className={styles.eduCard}>
-              <div className={styles.eduIcon}>
-                <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-              </div>
-              <div>
-                <p className={styles.eduDegree}>{edu.degree}</p>
-                <p className={styles.eduSchool}>{edu.school}</p>
-              </div>
-              <span className={styles.eduStatus}>{edu.status}</span>
-            </div>
-          ))}
+           {EDUCATION.map(edu => (
+             <div key={edu.degree} className={styles.eduCard}>
+               <div className={styles.eduIcon}>
+                 <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+               </div>
+               <div>
+                 {edu.certificateUrl ? (
+                   <a href={edu.certificateUrl} target="_blank" rel="noopener noreferrer" className={styles.eduDegreeLink}>
+                     {edu.degree}
+                   </a>
+                 ) : (
+                   <p className={styles.eduDegree}>{edu.degree}</p>
+                 )}
+                 <p className={styles.eduSchool}>{edu.school}</p>
+               </div>
+               <span className={styles.eduStatus}>{edu.status}</span>
+             </div>
+           ))}
 
         </div>
       </div>
