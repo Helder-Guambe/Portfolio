@@ -14,9 +14,9 @@ export default function Sobre() {
         <div className={styles.grid}>
 
           <div ref={textRef} className={`${styles.text} fade-in`}>
-            <p>Sou estudante finalista de Sistemas e Redes Computacionais na Universidade Wutivi, com foco em desenvolvimento de software backend. Tenho experiência prática adquirida no estágio na North Digits, onde desenvolvi APIs REST, implementei autenticação e trabalhei com bases de dados PostgreSQL.</p>
-            <p>Gosto de criar soluções que funcionam — código limpo, bem estruturado e que resolve problemas reais. Tenho interesse crescente em arquitecturas de sistemas, automação e integração de serviços.</p>
-            <p>Quando não estou a programar, estou a explorar novas tecnologias e a construir projectos pessoais que me desafiam a crescer.</p>
+            <p>Desenvolvedor de software focado na construção de soluções escaláveis, seguras e de alto desempenho. Com experiência em desenvolvimento backend, APIs REST, autenticação e bases de dados relacionais, trabalho na criação de sistemas que aliam eficiência técnica e valor de negócio.
+Sou motivado por desafios que exigem pensamento analítico, resolução de problemas e inovação. Tenho interesse em arquitetura de software, automação e integração de sistemas, áreas nas quais busco aprimorar continuamente os meus conhecimentos e competências.
+Acredito que grandes soluções nascem da combinação entre tecnologia, estratégia e execução, e procuro refletir essa visão em cada projeto que desenvolvo.</p>
           </div>
 
           <div ref={statsRef} className={`${styles.stats} fade-in`}>

@@ -59,8 +59,8 @@ export const PROJECTS = [
     name: 'Gestão de Certificados 12ª Classe',
     desc: 'Sistema para gerir e acompanhar o processo de emissão de certificados escolares, com backend em Node.js e sincronização via Firebase.',
     tags: ['React', 'Node.js', 'PostgreSQL', 'Firebase'],
-    status: 'em desenvolvimento',
-    active: true,
+    status: 'concluído',
+    active: false,
   },
   {
     id: 3,
@@ -86,7 +86,7 @@ export const EDUCATION = [
   {
     degree: 'Licenciatura em Sistemas e Redes Computacionais',
     school: 'Universidade Wutivi',
-    status: 'Em curso',
+    status: 'Fase de Monografia',
   },
   {
     degree: 'C Programming For Beginners - Master the C Language',
